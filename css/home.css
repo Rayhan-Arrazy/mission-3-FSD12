@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(40, 36, 61, 1);
+    font-family: "Lato", sans-serif;
+}
+h1 {
+	font-size: 20px;
+	color: rgba(255, 255, 255, 1);
+}
+h3 {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 1);
+}
+h4 {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 1);
+}
+h5 {
+	font-size: 12px;
+	color: rgba(255, 255, 255, 1);
+}
+.LogoText {
+	max-width: 131.25px;
+}
+.header{
+    display: flex;
+	flex-direction: row;
+    height: 74px;
+	width: auto;
+    background: rgba(61, 55, 89, 1);
+}
+.header-icon{
+	padding-left: 24px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.header-logo{
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.playlist-div1{
+	padding-left: 24px;
+	padding-top: 24px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.playlist-div2 {
+	padding-left: 24px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.card-flex {
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+	overflow: hidden;
+}
+.music-card{
+	max-height: 198px;
+	max-width: 257px;
+	border-radius: 4px;
+	padding: 12px;
+	background: rgba(61, 55, 89, 1);
+}
+.cover-album{
+	width: 124px;
+	height: 124px;
+}
+.two-album {
+	height: 62px;
+	display: flex;
+	flex-direction: row;
+}
+.music-name {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+.music-title {
+	display: flex;
+	flex-direction: column;
+}
+.three-dots {
+	width: 24px;
+	height: 24px;
+}
+.songlist {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.song-card {
+	display: flex;
+	flex-direction: row;
+	max-height: 74px;
+	max-width: 312px;
+	border-radius: 4px;
+	padding: 12px;
+	background: rgba(61, 55, 89, 1);
+}
+.song-title {
+	width: 204px;
+	height: 49px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	gap: 4px;
+}
+.song-image {
+	padding-right: 10px;
+	border-radius: 4px;
+	width: 50px;
+	height: 50px;
+}
