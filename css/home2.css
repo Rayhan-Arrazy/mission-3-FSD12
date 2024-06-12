@@ -30,22 +30,24 @@ h5 {
 		transform: scale(0);
 	}
 	.header-logo {
-		min-width: 272px;
+		max-width: 272px;
 	}
 	.logo-container {
 		padding: 0px;
 	}
 	.LogoText {
-		min-width: 175px;
+		max-width: 175px;
 	}
 	.header2 {
 		visibility: visible;
-		/* padding: 0px;
+		padding: 0px;
 		width: 0px;
-		transform: scale(0); */
+		transform: scale(0);	
 	}
 	.header3 {
 		visibility: visible;
+		padding: 0px;
+		transform: scale(0);
 	}
 	.navbar {
 		flex: none;
@@ -82,9 +84,8 @@ h5 {
 	border-bottom-color: rgba(231, 227, 252, 0.23);	
 	background: rgba(61, 55, 89, 1);
 }
-
 .header2 {
-	visibility: visible;
+	visibility: hidden;
 	display: flex;
 	align-items: center;
 	max-width: 820px;
@@ -102,9 +103,7 @@ h5 {
 	padding-left: 24px;
 	padding-right: 24px;
 	background: rgba(55, 52, 82, 1);
-
 }
-
 .input {
 	display: flex;
 	flex-direction: row;
@@ -117,16 +116,13 @@ h5 {
 	border-color: rgba(231, 227, 252, 0.22);
 	background: rgba(61, 55, 89, 1);
 }
-
 .searchBarText {
 	max-width: 764px;
 	height: 22px;
 	gap: 10px;
 }
-
-
 .header3 {
-	visibility: visible;
+	visibility: hidden;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -143,7 +139,6 @@ h5 {
 	gap: 36px;
 	background: rgba(55, 52, 82, 1);
 }
-
 .bell-frame {
 	display: flex;
 	align-items: center;
@@ -156,7 +151,6 @@ h5 {
 	gap: 10px;
 	background: #5A5266;
 }
-
 .notification-circle {
 	display: flex;
 	align-items: center;
@@ -169,40 +163,7 @@ h5 {
 	background: rgba(247, 167, 1, 1);
 	position: absolute;
 	top: 5px;
-}
-
-.avatar-frame {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	max-width: 140px;
-	max-height: 44px;
-	gap: 16px;
-}
-.bell-frame {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-height: 44px;
-	max-width: 44px;
-	border-width: 1px;
-	border-radius: 4px;
-	background: #5A5266;
-}
-.notification-circle {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 26px;
-	height: 26px;
-	border-width: 1px;
-	border-radius: 100%;
-	gap: 10px;
-	background: rgba(247, 167, 1, 1);
-	position: absolute;
-	bottom: 10px;
+	right: 210px;
 }
 .avatar-frame {
 	display: flex;
