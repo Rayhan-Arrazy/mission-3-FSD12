@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="header1">
             <div class="header-icon">
-                <img src="assets/double-arrow.png" alt="Arrow double left active">
+                <img src="assets/double-arrow.png" alt="Arrow double left active" id="arrow">
             </div>
             <div class="logo-container">
                 <img src="assets/LogoText.png" alt="LogoText" class="LogoText">
@@ -39,6 +39,115 @@
             <div class="avatar-frame">
                 <img src="assets/avatar.png" alt="avatar">
                 <h1>Hi, Jennie</h1>
+            </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- Sidebar -->
+     <!-- menu -->
+    <div id="sidebar">
+        <div class="menu">
+            <div class="sidebar-menu">
+                <div>
+                    <h3>Menu</h3>
+                </div>
+            </div>
+            <div class="sidebar-selected"></div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/home.png" alt="home">
+                    <h3>Home</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/discover.png" alt="discover">
+                    <h3>Discover</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/artists.png" alt="artists">
+                    <h3>Artists</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/play-button.png" alt="play-button">
+                    <h3>Songs</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/hamburger.png" alt="hamburger">
+                    <h3>Albums</h3>
+                </div>
+            </div>
+        </div>
+        <div class="myMusic">
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <h3>My Music</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/like.png" alt="like">
+                    <h3>My Favorites</h3>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="sidebar-item">
+                    <img src="assets/clock.png" alt="clock">
+                    <h3>Recently Play</h3>
+                </div>
+            </div>
+        </div>
+        <div class="myPlaylist">
+            <div class="myPlaylist-menu">
+                <div class="myPlayList-item1">
+                    <h3>My Playlist</h3>
+                    <img src="assets/plus.png" alt="plus">
+                </div>
+            </div>
+            <div class="myPlaylist-menu">
+                <div class="myPlayList-item2">
+                    <div class="myPlaylist-button">
+                        <h4>Album</h4>
+                    </div>
+                    <div class="myPlaylist-button">
+                        <h4>Playlist</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="myPlaylist-card">
+                <img src="assets/nadin_amizah.png" alt="nadin amizah"
+                style="border-radius: 4px; width: 50px; height: 50px;">
+                <div class="myPlaylist-song">
+                    <h3>Selamat Ulang...</h3>
+                    <h4>Nadin Amizah</h4> 
+                </div>
+            </div>
+            <div class="myPlaylist-card">
+                <img src="assets/midnight.png" alt="midnight" style="border-radius: 4px; width: 50px; height: 50px;">
+                <div class="myPlaylist-song">
+                    <h3>Midnight</h3>
+                    <h4>Taylor Swift</h4>
+                </div>
+            </div>
+            <div class="myPlaylist-card">
+                <img src="assets/red_taylor_swift.png" alt="red_taylor_swift" style="border-radius: 4px; width: 50px; height: 50px;">
+                <div class="myPlaylist-song">
+                    <h3>Red</h3>
+                    <h4>Taylor Swift</h4>
+                </div>
+            </div>
+            <div class="myPlaylist-card">
+                <img src="assets/album frame.png" alt="album frame" style="border-radius: 4px; width: 50px; height: 50px;">
+                <div class="myPlaylist-song">
+                    <h3>Taylor's...</h3>
+                    <h4>Jennie</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -182,5 +291,42 @@
         </div>
         <h4>Show All</h4>
     </div>
+    <!-- Song Bar -->
+     <div class="song-bar">
+        <div class="playing-song">
+            <div class="myPlaylist-card">
+                <img src="assets/red_taylor_swift.png" alt="red_taylor_swift"
+                    style="border-radius: 4px; width: 50px; height: 50px;">
+                <div class="myPlaylist-song">
+                    <h3>Red</h3>
+                    <h4>Taylor Swift</h4>
+                </div>
+            </div>
+        </div>
+        <div class="song-bar-control">
+            <div class="playAndPause">
+                <img src="" alt="">
+                <div class="pauseIcon">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <img src="" alt="">
+            </div>
+            <div class="duration">
+                <h3>1.21</h3>
+                <div class="durationBar"></div>
+                <h3>6.00</h3>
+            </div>
+        </div>
+        <div class="song-bar-volume">
+            <img src="" alt="">
+            <div class="volumeControl">
+                <img src="" alt="">
+                <div class="volumeBar"></div>
+            </div>
+        </div>
+     </div>
 </body>
 </html>
+<script src="js/main.js"></script>

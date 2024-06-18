@@ -22,44 +22,44 @@ h5 {
 	font-size: 12px;
 	color: rgba(255, 255, 255, 1);
 }
-@media only screen and (min-width: 640px) {
-	.header-icon {
-		visibility: hidden;
-		padding: 0px;
-		width: 0px;
-		transform: scale(0);
-	}
-	.header-logo {
-		min-width: 272px;
-	}
-	.logo-container {
-		padding: 0px;
-	}
-	.LogoText {
-		min-width: 175px;
-	}
-	.header2 {
-		visibility: visible;
-		/* padding: 0px;
-		width: 0px;
-		transform: scale(0); */
-	}
-	.header3 {
-		visibility: visible;
-	}
-	.navbar {
-		flex: none;
-		display: none;
-	}
-}
 .navbar {
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	height: 80px;
 }
+#sidebar {
+	visibility: hidden;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	max-width: 272px;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: rgba(231, 227, 252, 0.23);
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 40px;
+	padding-right: 40px;
+	gap: 24px;
+	background: rgba(61, 55, 89, 1);	
+}
+#overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	display: none;
+}
 .header-icon {
-	visibility: visible;
+	display: block;
 }
 .LogoText {
 	max-width: 131.25px;
@@ -73,10 +73,14 @@ h5 {
 .header1{
 	display: flex;	
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	max-height: 80px;
-	min-width: 360px;
+	width: 360px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 24px;
+	padding-right: 24px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: rgba(231, 227, 252, 0.23);	
@@ -131,7 +135,7 @@ h5 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: end;
-	width: 100%;
+	max-width: 300px;
 	max-height: 80px;
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
@@ -192,6 +196,9 @@ h5 {
 	background: #5A5266;
 }
 .notification-circle {
+	position: absolute;
+	top: -5px;
+	right: -5px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -201,8 +208,6 @@ h5 {
 	border-radius: 100%;
 	gap: 10px;
 	background: rgba(247, 167, 1, 1);
-	position: absolute;
-	bottom: 10px;
 }
 .avatar-frame {
 	display: flex;
@@ -294,4 +299,123 @@ h5 {
 	border-radius: 4px;
 	width: 50px;
 	height: 50px;
+}
+.menu {
+	width: 192px;
+	height: 334px;
+}
+.sidebar-menu {
+	width: 192px;
+	max-height: 56px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.sidebar-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+}
+.sidebar-selected {
+	width: 6px;
+	height: 16px;
+	border-width: 1px;
+	border-radius: 2px;
+	background-color: rgba(247, 167, 1, 1);
+}
+.myMusic {
+	height: 166px;
+	width: 192px;
+}
+.myPlaylist {
+	width: 192px;
+	height: 370px;
+}
+.myPlaylist-menu {
+	width: 192px;
+	max-height: 56px;
+}
+.myPlayList-item1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+.myPlayList-item2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	gap: 8px;
+	padding-bottom: 6px;
+}
+.myPlaylist-button {
+	max-width: 61px;
+	max-height: 28px;
+	border-width: 1px;
+	border-radius: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	gap: 4px;
+	background-color: rgba(40, 36, 61, 1);
+	text-align: center;
+}
+.myPlaylist-card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 192px;
+	max-height: 70px;
+	border-width: 1px;
+	border-radius: 4px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	gap: 10px;
+}
+.myPlaylist-song {
+	display: flex;
+	flex-direction: column;
+	max-width: 132px;
+	max-height: 49px;
+	gap: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 640px) {
+	.header1 {
+		flex: 0%;
+		max-width: 272px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.header-icon {
+		display: none;
+	}
+	.logo-container {
+		padding: 0px;
+	}
+	.LogoText {
+		max-width: 175px;
+	}
+	#sidebar {
+		visibility: visible;
+		top: 80px;
+	}
 }
