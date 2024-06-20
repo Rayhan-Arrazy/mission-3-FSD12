@@ -5,328 +5,513 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Music - Home</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
     <div class="navbar">
-        <div class="header1">
-            <div class="header-icon">
-                <img src="assets/double-arrow.png" alt="Arrow double left active" id="arrow">
-            </div>
-            <div class="logo-container">
-                <img src="assets/LogoText.png" alt="LogoText" class="LogoText">
-            </div>
-            <div class="header-icon">
-                <img src="assets/dehaze.png" alt="dehaze">  
-            </div>
+        <div class="logo-navbar">
+            <img src="assets/Logo.png" alt="logo" width="34px" height="34px">
+            <p class="brand-font">MyMusic</p>
         </div>
-        <div class="header2">
-            <div class="input">
-                <img src="assets/search.png" alt="search icon" style="padding: 12px;">
-                <h3>Search Song, Album, Singer...</h3>
-            </div>
+        <div class="search">
+            <img src="assets/search.png" alt="search icon" class="search-icon">
+            <input type="text" placeholder="Search Song, Album, Singer..." class="input-search body-2">
         </div>
-        <div class="header3">
-            <div>
-                <div class="bell-frame">
-                    <img src="assets/bell.png" alt="bell icon">
-                    <div class="notification-circle">12</div>
-                </div>
+        <div class="profile">
+            <div class="bell-frame">
+                <img src="assets/bell.png" alt="bell icon">
+                <div class="notification-circle">12</div>
             </div>
             <div class="avatar-frame">
                 <img src="assets/avatar.png" alt="avatar">
                 <h1>Hi, Jennie</h1>
             </div>
         </div>
-    </div>
-    <div id="overlay"></div>
-    <!-- Sidebar -->
-     <!-- menu -->
-    <div id="sidebar">
-        <div class="menu">
-            <div class="sidebar-menu">
-                <div>
-                    <h3>Menu</h3>
-                </div>
-            </div>
-            <div class="sidebar-selected"></div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/home.png" alt="home">
-                    <h3>Home</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/discover.png" alt="discover">
-                    <h3>Discover</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/artists.png" alt="artists">
-                    <h3>Artists</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/play-button.png" alt="play-button">
-                    <h3>Songs</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/hamburger.png" alt="hamburger">
-                    <h3>Albums</h3>
-                </div>
-            </div>
+        <div class="arrow-icon">
+            <img src="assets/double-arrow.png" alt="Arrow double left active" id="arrow">
         </div>
-        <div class="myMusic">
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <h3>My Music</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/like.png" alt="like">
-                    <h3>My Favorites</h3>
-                </div>
-            </div>
-            <div class="sidebar-menu">
-                <div class="sidebar-item">
-                    <img src="assets/clock.png" alt="clock">
-                    <h3>Recently Play</h3>
-                </div>
-            </div>
-        </div>
-        <div class="myPlaylist">
-            <div class="myPlaylist-menu">
-                <div class="myPlayList-item1">
-                    <h3>My Playlist</h3>
-                    <img src="assets/plus.png" alt="plus">
-                </div>
-            </div>
-            <div class="myPlaylist-menu">
-                <div class="myPlayList-item2">
-                    <div class="myPlaylist-button">
-                        <h4>Album</h4>
-                    </div>
-                    <div class="myPlaylist-button">
-                        <h4>Playlist</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="myPlaylist-card">
-                <img src="assets/nadin_amizah.png" alt="nadin amizah"
-                style="border-radius: 4px; width: 50px; height: 50px;">
-                <div class="myPlaylist-song">
-                    <h3>Selamat Ulang...</h3>
-                    <h4>Nadin Amizah</h4> 
-                </div>
-            </div>
-            <div class="myPlaylist-card">
-                <img src="assets/midnight.png" alt="midnight" style="border-radius: 4px; width: 50px; height: 50px;">
-                <div class="myPlaylist-song">
-                    <h3>Midnight</h3>
-                    <h4>Taylor Swift</h4>
-                </div>
-            </div>
-            <div class="myPlaylist-card">
-                <img src="assets/red_taylor_swift.png" alt="red_taylor_swift" style="border-radius: 4px; width: 50px; height: 50px;">
-                <div class="myPlaylist-song">
-                    <h3>Red</h3>
-                    <h4>Taylor Swift</h4>
-                </div>
-            </div>
-            <div class="myPlaylist-card">
-                <img src="assets/album frame.png" alt="album frame" style="border-radius: 4px; width: 50px; height: 50px;">
-                <div class="myPlaylist-song">
-                    <h3>Taylor's...</h3>
-                    <h4>Jennie</h4>
-                </div>
-            </div>
+        <div class="hamburger-icon">
+            <img src="assets/dehaze.png" alt="dehaze">
         </div>
     </div>
-    <!-- Most Played Playlist -->
-    <div class="playlist-div1">
-        <h1>Most Played Playlist</h1>
-        <div class="card-flex">
-            <div class="music-card">
-                <div class="cover-album">
-                    <div class="two-album">
-                        <img src="assets/album-cover1.png" alt="album-cover1">
-                        <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
-                    </div>
-                    <div class="two-album">
-                        <img src="assets/new_jeans.png" alt="new jeans black album">
-                        <img src="assets/nadin_amizah.png" alt="nadin amizah album">
-                    </div>
+    
+    <div class="flex-content">
+        <div id="sidebar">
+            <div class="menu">
+                <div class="sidebar-menu">
+                    <p class="title-text">Menu</p>  
                 </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>Vibes of the...</h4>
-                        <h5>jenniekim</h5>
-                    </div>
-                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
-                </div>
-            </div>
-            <div class="music-card">
-                <div class="cover-album">
-                    <div class="two-album">
-                        <img src="assets/seven.png" alt="seven album">
-                        <img src="assets/zero_nj.png" alt="zero new jeans album">
-                    </div>
-                    <div class="two-album">
-                        <img src="assets/album_cover2.png" alt="album-cover2">
-                        <img src="assets/Black_Pink_-_Square_Up_artwork.png" alt="Black_Pink_-_Square_Up_artwork">
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <div class="sidebar-selected"></div>
+                        <img src="assets/home.png" alt="home">
+                        <h3>Home</h3>
                     </div>
                 </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>Vibes of the...</h4>
-                        <h5>jenniekim</h5>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/discover.png" alt="discover">
+                        <h3>Discover</h3>
                     </div>
-                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
                 </div>
-            </div>
-        </div>
-        <h4>Show All</h4>
-    </div>
-    <!-- Most Played Album -->
-    <div class="playlist-div2">
-        <h1>Most Played Album</h1>
-        <div class="card-flex">
-            <div class="music-card">
-                <div class="cover-album">
-                    <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
-                </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>BORN PINK</h4>
-                        <h5>BLACKPINK</h5>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/artists.png" alt="artists">
+                        <h3>Artists</h3>
                     </div>
-                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
                 </div>
-            </div>
-            <div class="music-card">
-                <div class="cover-album">
-                    <img src="assets/folklore.png" alt="folklore">
-                </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>Folklore</h4>
-                        <h5>Taylor Swift</h5>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/play-button.png" alt="play-button">
+                        <h3>Songs</h3>
                     </div>
-                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
                 </div>
-            </div>
-        </div>
-        <h4>Show All</h4>
-    </div>
-    <!-- Most Played song -->
-    <div class="songlist">
-        <h1>Most Played song</h1>
-        <div>
-            <div class="song-card">
-                <img src="assets/new_jeans.png" alt="new jeans" style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
-                <div class="song-title">
-                    <h3>OMG</h3>    
-                    <h4>NewJeans</h4>
-                </div>
-                <img src="assets/three-dots.png" alt="three dots" class="three-dots">
-            </div>
-        </div>
-        <div>
-            <div class="song-card">
-                <img src="assets/Black_Pink_-_Square_Up_artwork.png" alt="Black_Pink_-_Square_Up_artwork" style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
-                <div class="song-title">
-                    <h3>DDU-DU-DDU-DU</h3>
-                    <h4>Taylor Swift</h4>
-                </div>
-                <img src="assets/three-dots.png" alt="three dots" class="three-dots">
-            </div>
-        </div>
-        <div>
-            <div class="song-card">
-                <img src="assets/zero_nj.png" alt="zero new jeans" style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
-                <div class="song-title">
-                    <h3>Zero</h3>
-                    <h4>NewJeans</h4>
-                </div>
-                <img src="assets/three-dots.png" alt="three dots" class="three-dots">
-            </div>
-        </div>
-        <h4>Show All</h4>
-    </div>
-    <!-- Frequently Played Artists -->
-    <div class="playlist-div2">
-        <h1>Most Played Album</h1>
-        <div class="card-flex">
-            <div class="music-card">
-                <div class="cover-album">
-                    <img src="assets/Lisa.png" alt="Lisa">
-                </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>LISA</h4>
-                        <h5>1M Subscribers</h5>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/hamburger.png" alt="hamburger">
+                        <h3>Albums</h3>
                     </div>
                 </div>
             </div>
-            <div class="music-card">
-                <div class="cover-album">
-                    <img src="assets/Artist.png" alt="Artist">
+            <div class="myMusic">
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <h3>My Music</h3>
+                    </div>
                 </div>
-                <div class="music-name">
-                    <div class="music-title">
-                        <h4>FIFTY FIFTY</h4>
-                        <h5>1M Subscribers</h5>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/like.png" alt="like">
+                        <h3>My Favorites</h3>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <div class="sidebar-item">
+                        <img src="assets/clock.png" alt="clock">
+                        <h3>Recently Play</h3>
                     </div>
                 </div>
             </div>
-        </div>
-        <h4>Show All</h4>
-    </div>
-    <!-- Song Bar -->
-     <div class="song-bar">
-        <div class="playing-song">
-            <div class="myPlaylist-card">
-                <img src="assets/red_taylor_swift.png" alt="red_taylor_swift"
+            <div class="myPlaylist">
+                <div class="myPlaylist-menu">
+                    <div class="myPlayList-item1">
+                        <h3>My Playlist</h3>
+                        <img src="assets/plus.png" alt="plus">
+                    </div>
+                </div>
+                <div class="myPlaylist-menu">
+                    <div class="myPlayList-item2">
+                        <div class="myPlaylist-button">
+                            <h4>Album</h4>
+                        </div>
+                        <div class="myPlaylist-button">
+                            <h4>Playlist</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="myPlaylist-card">
+                    <img src="assets/nadin_amizah.png" alt="nadin amizah"
                     style="border-radius: 4px; width: 50px; height: 50px;">
-                <div class="myPlaylist-song">
-                    <h3>Red</h3>
-                    <h4>Taylor Swift</h4>
+                    <div class="myPlaylist-song">
+                        <h3>Selamat Ulang...</h3>
+                        <h4>Nadin Amizah</h4> 
+                    </div>
+                </div>
+                <div class="myPlaylist-card">
+                    <img src="assets/midnight.png" alt="midnight" style="border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="myPlaylist-song">
+                        <h3>Midnight</h3>
+                        <h4>Taylor Swift</h4>
+                    </div>
+                </div>
+                <div class="myPlaylist-card">
+                    <img src="assets/red_taylor_swift.png" alt="red_taylor_swift" style="border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="myPlaylist-song">
+                        <h3>Red</h3>
+                        <h4>Taylor Swift</h4>
+                    </div>
+                </div>
+                <div class="myPlaylist-card">
+                    <img src="assets/album frame.png" alt="album frame" style="border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="myPlaylist-song">
+                        <h3>Taylor's...</h3>
+                        <h4>Jennie</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="song-bar-control">
-            <div class="playAndPause">
-                <img src="" alt="">
-                <div class="pauseIcon">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+
+        <main>
+            <div class="container1">
+                <div class="container-heading">
+                    <h2 class="heading-1">Most Played Playlists</h2>
+                    <p class="show-all">Show All</p>
                 </div>
-                <img src="" alt="">
+                <div class="album-image">
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/album-cover1.png" alt="album-cover1">
+                                <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/new_jeans.png" alt="new jeans black album">
+                                <img src="assets/nadin_amizah.png" alt="nadin amizah album">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/album-cover1.png" alt="album-cover1">
+                                <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/new_jeans.png" alt="new jeans black album">
+                                <img src="assets/nadin_amizah.png" alt="nadin amizah album">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/album-cover1.png" alt="album-cover1">
+                                <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/new_jeans.png" alt="new jeans black album">
+                                <img src="assets/nadin_amizah.png" alt="nadin amizah album">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/album-cover1.png" alt="album-cover1">
+                                <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/new_jeans.png" alt="new jeans black album">
+                                <img src="assets/nadin_amizah.png" alt="nadin amizah album">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/album-cover1.png" alt="album-cover1">
+                                <img src="assets/red_taylor_swift.png" alt="taylor swift red album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/new_jeans.png" alt="new jeans black album">
+                                <img src="assets/nadin_amizah.png" alt="nadin amizah album">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <div class="two-album">
+                                <img src="assets/seven.png" alt="seven album">
+                                <img src="assets/zero_nj.png" alt="zero new jeans album">
+                            </div>
+                            <div class="two-album">
+                                <img src="assets/album_cover2.png" alt="album-cover2">
+                                <img src="assets/Black_Pink_-_Square_Up_artwork.png" alt="Black_Pink_-_Square_Up_artwork">
+                            </div>
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Vibes of the...</h4>
+                                <h5>jenniekim</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="duration">
-                <h3>1.21</h3>
-                <div class="durationBar"></div>
-                <h3>6.00</h3>
+
+            <div class="container2">
+                <div class="container-heading">
+                    <h2 class="heading-1">Most Played Albums</h2>
+                    <p class="show-all">Show All</p>
+                </div>
+                <div class="album-image">
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>BORN PINK</h4>
+                                <h5>BLACKPINK</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>BORN PINK</h4>
+                                <h5>BLACKPINK</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>BORN PINK</h4>
+                                <h5>BLACKPINK</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>BORN PINK</h4>
+                                <h5>BLACKPINK</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Born_Pink_Digital.png" alt="Born_Pink_Digital">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>BORN PINK</h4>
+                                <h5>BLACKPINK</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/folklore.png" alt="folklore">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>Folklore</h4>
+                                <h5>Taylor Swift</h5>
+                            </div>
+                            <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-heading">
+                <h2 class="heading-1">Most Played Songs</h2>
+                <p class="show-all">Show All</p>
+            </div>
+            <div class="songlist">
+                <div class="song-card">
+                    <img src="assets/new_jeans.png" alt="new jeans"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>OMG</h3>
+                        <h4>NewJeans</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+                <div class="song-card">
+                    <img src="assets/new_jeans.png" alt="new jeans"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>OMG</h3>
+                        <h4>NewJeans</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+                <div class="song-card">
+                    <img src="assets/new_jeans.png" alt="new jeans"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>OMG</h3>
+                        <h4>NewJeans</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+                <div class="song-card">
+                    <img src="assets/new_jeans.png" alt="new jeans"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>OMG</h3>
+                        <h4>NewJeans</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+                <div class="song-card">
+                    <img src="assets/Black_Pink_-_Square_Up_artwork.png" alt="Black_Pink_-_Square_Up_artwork"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>DDU-DU-DDU-DU</h3>
+                        <h4>Taylor Swift</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+                <div class="song-card">
+                    <img src="assets/zero_nj.png" alt="zero new jeans"
+                        style="padding-right: 10px; border-radius: 4px; width: 50px; height: 50px;">
+                    <div class="song-title">
+                        <h3>Zero</h3>
+                        <h4>NewJeans</h4>
+                    </div>
+                    <img src="assets/three-dots.png" alt="three dots" class="three-dots">
+                </div>
+            </div>
+
+            <div class="container3">
+                <div class="container-heading">
+                    <h2 class="heading-1">Frequenly Played Artist</h2>
+                    <p class="show-all">Show All</p>
+                </div>
+                <div class="album-image">
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Lisa.png" alt="Lisa">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>LISA</h4>
+                                <h5>1M Subscribers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Lisa.png" alt="Lisa">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>LISA</h4>
+                                <h5>1M Subscribers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Lisa.png" alt="Lisa">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>LISA</h4>
+                                <h5>1M Subscribers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Lisa.png" alt="Lisa">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>LISA</h4>
+                                <h5>1M Subscribers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-card">
+                        <div class="cover-album">
+                            <img src="assets/Artist.png" alt="Artist">
+                        </div>
+                        <div class="music-name">
+                            <div class="music-title">
+                                <h4>FIFTY FIFTY</h4>
+                                <h5>1M Subscribers</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="song-bar">
+            <div class="playingSong" style="gap: 6px;">
+                <div class="song-bar-title">
+                    <img src="assets/red_taylor_swift.png" alt="red_taylor_swift"
+                        style="border-radius: 4px; width: 74px; height: 74px;">
+                    <div class="song-bar-artist">
+                        <h1>Red</h1>
+                        <h2>Taylor Swift</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="song-bar-control">
+                <div class="playAndPause">
+                    <img src="assets/shuffle.png" alt="shuffle" style="height: 28px;">
+                    <div class="pauseIcon">
+                        <img src="assets/previous.png" alt="previous">
+                        <img src="assets/pause.png" alt="pause">
+                        <img src="assets/next.png" alt="next">
+                    </div>
+                    <img src="assets/repeat.png" alt="repeat" style="height: 28px;">
+                </div>
+                <div class="duration">
+                    <h3>1.21</h3>
+                    <img src="assets/duration-bar.png" alt="duration-bar" style="height: 6px;">
+                    <h3>6.00</h3>
+                </div>
+            </div>
+            <div class="align">
+                <div class="song-bar-volume">
+                    <img src="assets/jack.png" alt="jack" style="height: 24px;">
+                    <div class="volumeControl">
+                        <img src="assets/sound.png" alt="sound" style="height: 24px;">
+                        <img src="assets/volume-bar.png" alt="volume bar" style="height: 6px;">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="song-bar-volume">
-            <img src="" alt="">
-            <div class="volumeControl">
-                <img src="" alt="">
-                <div class="volumeBar"></div>
-            </div>
-        </div>
-     </div>
+    </div>
 </body>
 </html>
 <script src="js/main.js"></script>
